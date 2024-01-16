@@ -5,6 +5,7 @@ import MaxWidthContainer from '../ui/maxWidthContainer'
 
 import { HeaderDesktopNavigation, HeaderMobileNavigation } from './components/headerNavigation'
 import { twMerge } from 'tailwind-merge';
+import Image from 'next/image';
 
 
 const Header = () => {
@@ -20,7 +21,7 @@ const Header = () => {
 
                 {/* Icon */}
                 <a>
-                    <img alt='Logo' className="h-[27px]" src='./assets/shared/desktop/logo-dark.png' />
+                    <Image alt='Logo' className="h-[27px]" src='./assets/shared/desktop/logo-dark.png' />
                 </a>
 
                 {/* Desktop navigation */}
@@ -28,7 +29,7 @@ const Header = () => {
 
                 {/* Hamburger / close menu */}
                 <button className="md:hidden" onClick={toggleMobileNavigation}>
-                    <img alt='nav hamburger' src={`./assets/shared/mobile/icon-${expanded ? 'close' : 'hamburger'}.svg`} />
+                    <Image alt='nav hamburger' src={`./assets/shared/mobile/icon-${expanded ? 'close' : 'hamburger'}.svg`} />
                 </button>
 
             </MaxWidthContainer>

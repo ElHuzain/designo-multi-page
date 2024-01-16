@@ -19,7 +19,7 @@ export const HeaderDesktopNavigation = () => {
     </nav>
 }
 
-export const HeaderMobileNavigation = ({ expanded, closeButton }: any) => {
+export const HeaderMobileNavigation = () => {
     return <nav className="block md:hidden bg-black">
         <MaxWidthContainer>
             <ul className=" space-y-8  py-11 gap-10">

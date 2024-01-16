@@ -1,10 +1,9 @@
 import React from 'react'
 
-const page = ({ children }: { children: React.ReactNode }) => {
+const page = () => {
     return (
         <div>
             dezaynn
-            {children}
         </div>
     )
 }
