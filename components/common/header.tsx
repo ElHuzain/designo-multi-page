@@ -6,6 +6,7 @@ import MaxWidthContainer from '../ui/maxWidthContainer'
 import { HeaderDesktopNavigation, HeaderMobileNavigation } from './components/headerNavigation'
 import { twMerge } from 'tailwind-merge';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const Header = () => {
@@ -20,23 +21,23 @@ const Header = () => {
             <MaxWidthContainer className="flex items-center z-10 justify-between h-[96px] md:h-[155px]">
 
                 {/* Icon */}
-                <a>
-                    <Image alt='Logo' className="h-[27px]" src='./assets/shared/desktop/logo-dark.png' />
-                </a>
+                <Link href='/home'>
+                    <Image alt='Logo' height='27' width='197' className="h-[27px]" src='/assets/shared/desktop/logo-dark.png' />
+                </Link>
 
                 {/* Desktop navigation */}
                 <HeaderDesktopNavigation />
 
                 {/* Hamburger / close menu */}
-                <button className="md:hidden" onClick={toggleMobileNavigation}>
-                    <Image alt='nav hamburger' src={`./assets/shared/mobile/icon-${expanded ? 'close' : 'hamburger'}.svg`} />
+                <button className="md:hidden z-10" onClick={toggleMobileNavigation}>
+                    <Image alt='nav hamburger' width='24' height='20' src={`/assets/shared/mobile/icon-${expanded ? 'close' : 'hamburger'}.svg`} />
                 </button>
 
             </MaxWidthContainer>
 
             {/* The overlay of mobile navigation */}
-            <div className={twMerge('h-screen w-screen absolute z-1 hidden bg-transparent', expanded && 'block bg-[#00000067]')}>
-                <HeaderMobileNavigation />
+            <div className={twMerge('min-h-screen h-full w-screen absolute z-20 pointer-events-none transition-opacity duration-300 opacity-0 bg-[#00000067]', expanded && 'pointer-events-auto opacity-100')}>
+                <HeaderMobileNavigation toggleMobileNavigation={toggleMobileNavigation} />
             </div>
         </header>
     )

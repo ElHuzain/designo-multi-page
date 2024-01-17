@@ -16,6 +16,7 @@ module.exports = {
       },
     },
     extend: {
+
       colors: {
         peach: "var(--peach)",
         light_peach: "var(--light-peach)",

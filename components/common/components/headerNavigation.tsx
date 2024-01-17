@@ -19,13 +19,13 @@ export const HeaderDesktopNavigation = () => {
     </nav>
 }
 
-export const HeaderMobileNavigation = () => {
+export const HeaderMobileNavigation = ({ toggleMobileNavigation }: any) => {
     return <nav className="block md:hidden bg-black">
         <MaxWidthContainer>
-            <ul className=" space-y-8  py-11 gap-10">
-                <li className="tracking-widest"><HeaderNavLink href="/home" color="white">Our company</HeaderNavLink></li>
-                <li className="tracking-widest"><HeaderNavLink href="/locations" color="white">Locations</HeaderNavLink></li>
-                <li className="tracking-widest"><HeaderNavLink href="/contact-us" color="white">Contact</HeaderNavLink></li>
+            <ul className="space-y-8  py-11 gap-10">
+                <li onClick={toggleMobileNavigation} className="tracking-widest"><HeaderNavLink href="/home" color="white">Our company</HeaderNavLink></li>
+                <li onClick={toggleMobileNavigation} className="tracking-widest"><HeaderNavLink href="/locations" color="white">Locations</HeaderNavLink></li>
+                <li onClick={toggleMobileNavigation} className="tracking-widest"><HeaderNavLink href="/contact-us" color="white">Contact</HeaderNavLink></li>
             </ul>
         </MaxWidthContainer>
     </nav>
