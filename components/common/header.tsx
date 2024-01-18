@@ -36,7 +36,7 @@ const Header = () => {
             </MaxWidthContainer>
 
             {/* The overlay of mobile navigation */}
-            <div className={twMerge('min-h-screen h-full w-screen absolute z-20 pointer-events-none transition-opacity duration-300 opacity-0 bg-[#00000067]', expanded && 'pointer-events-auto opacity-100')}>
+            <div className={twMerge('min-h-screen h-full w-full absolute z-20 pointer-events-none transition-opacity duration-300 opacity-0 bg-[#00000067]', expanded && 'pointer-events-auto opacity-100')}>
                 <HeaderMobileNavigation toggleMobileNavigation={toggleMobileNavigation} />
             </div>
         </header>

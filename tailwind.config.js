@@ -6,7 +6,7 @@ module.exports = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   theme: {
     container: {
       center: true,
@@ -16,7 +16,11 @@ module.exports = {
       },
     },
     extend: {
-
+      spacing: {
+        bottom_margin: '160px',
+        bottom_margin_mobile: '120px',
+      },
+      
       colors: {
         peach: "var(--peach)",
         light_peach: "var(--light-peach)",
@@ -24,7 +28,7 @@ module.exports = {
         dark_grey: "var(--dark-grey)",
         white: "var(--white)",
         light_grey: "var(--light-grey)",
-        
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
