@@ -15,8 +15,13 @@ const Feature = ({ title, description, image, backgroundDirection = 'top' }: { t
         <article className="flex flex-col sm:flex-row lg:flex-col items-center sm:gap-[32px] gap-[48px] lg:gap-[48px]">
 
             <div className="relative w-[202px] h-[202px]">
-                <img className={twMerge("absolute top-0 z-10 left-0 h-full w-full object-contain", getDirection())} src="/assets/home/desktop/bg-pattern-hero-home.svg" />
-                <img className="w-full h-full z-20 object-contain" src={image} />
+
+                {/* Background decoration */}
+                <img alt='Background-decoration' className={twMerge("absolute top-0 z-[-1] left-0 h-full w-full object-contain", getDirection())} src="/assets/home/desktop/bg-pattern-hero-home.svg" />
+
+                {/* Icon */}
+                <img alt='Icon' className="w-full h-full z-20 object-contain" src={image} />
+                
             </div>
 
             <div className="space-y-[32px] sm:space-y-4 lg:space-y-[32px] text-center w-fit sm:text-left lg:text-center">
