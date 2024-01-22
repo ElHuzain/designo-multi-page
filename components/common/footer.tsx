@@ -28,22 +28,43 @@ const Footer = () => {
         </MaxWidthContainer >
 
         {/* This is a black box in the bottom (merges with the footer) */}
-        <div className="bg-black z-[-1] bottom-0 absolute w-full h-[50%] md:h-[86px] lg:h-[72px]">ee</div>
+        <div className="bg-black z-[-1] bottom-0 absolute w-full h-[50%] md:h-[86px] lg:h-[72px]"></div>
       </div>
 
       {/* Actual footer */}
-      < footer className="h-[300px] pt-[64px] md:pt-[80px] lg:pt-[72px] w-full bg-black" >
+      < footer className="pb-[64px] md:pb[80px] lg:pb[72px] pt-[64px] md:pt-[80px] lg:pt-[72px] w-full bg-black" >
         <MaxWidthContainer className="relative">
 
-          <img alt='logo' className="w-[196px] h-6 mb-8 md:mb-10" src='/assets/shared/desktop/logo-light.png' />
+          <img alt='logo' className="w-[196px] h-6 md:mb-10" src='/assets/shared/desktop/logo-light.png' />
 
-          <hr className=' border-[#333136]' />
+          <hr className=' border-[#333136] my-[32px] md:my-[40px]' />
 
-          <ul className="text-white flex top-0 right-6 lg:right-0 gap-[42px] absolute">
+          <ul className="text-white font-[300] tracking-[2px] flex top-0 lg:right-[42px] xl:right-0 gap-[42px] absolute">
             <li>OUR COMPANY</li>
             <li>LOCATIONS</li>
             <li>CONTACT</li>
           </ul>
+
+          <div className="flex text-[#8E8D8E]">
+
+            {/* Address & Emails */}
+            <address className="grow-[0.5]"><span className="font-bold">Designo Central Office</span><br />
+              3886 Wellington Street<br />Toronto, Ontario M9C 3J5</address>
+
+            <address className="font-bold grow">Contact Us (Central Office)
+              <br />P : +1 253-863-8967
+              <br />M : contact@designo.co</address>
+
+            {/* Contacts */}
+            <ul className="flex h-full justify-end items-end gap-[9px]">
+              <li><a href=''><img className='hover:brightness-125 cursor-pointer' alt='facebook-link' src='/assets/shared/desktop/icon-facebook.svg' /></a></li>
+              <li><a href=''><img className='hover:brightness-125 cursor-pointer' alt='youtube-link' src='/assets/shared/desktop/icon-youtube.svg' /></a></li>
+              <li><a href=''><img className='hover:brightness-125 cursor-pointer' alt='twitter-link' src='/assets/shared/desktop/icon-twitter.svg' /></a></li>
+              <li><a href=''><img className='hover:brightness-125 cursor-pointer' alt='pinterest-link' src='/assets/shared/desktop/icon-pinterest.svg' /></a></li>
+              <li><a href=''><img className='hover:brightness-125 cursor-pointer' alt='instagram-link' src='/assets/shared/desktop/icon-instagram.svg' /></a></li>
+            </ul>
+
+          </div>
 
         </MaxWidthContainer>
       </footer >
