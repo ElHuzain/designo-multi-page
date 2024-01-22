@@ -17,7 +17,7 @@ const Feature = ({ title, description, image, backgroundDirection = 'top' }: { t
             <div className="relative w-[202px] h-[202px]">
 
                 {/* Background decoration */}
-                <img alt='Background-decoration' className={twMerge("absolute top-0 z-[-1] left-0 h-full w-full object-contain", getDirection())} src="/assets/home/desktop/bg-pattern-hero-home.svg" />
+                <img alt={`${title}-background`} className={twMerge("absolute top-0 z-[-1] left-0 h-full w-full object-contain", getDirection())} src="/assets/home/desktop/bg-pattern-hero-home.svg" />
 
                 {/* Icon */}
                 <img alt='Icon' className="w-full h-full z-20 object-contain" src={image} />
@@ -25,7 +25,7 @@ const Feature = ({ title, description, image, backgroundDirection = 'top' }: { t
             </div>
 
             <div className="space-y-[32px] sm:space-y-4 lg:space-y-[32px] text-center w-fit sm:text-left lg:text-center">
-                <h2 className="text-xl uppercase tracking-[5px] font-semibold">{title}</h2>
+                <h3 className="text-xl uppercase tracking-[5px] font-semibold">{title}</h3>
                 <p>
                     {description}
                 </p>

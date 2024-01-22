@@ -6,7 +6,7 @@ import React from 'react'
 const MainBanner = () => {
     return (
         <MaxWidthContainer expands={true} bottomMargin={true}>
-            <main className="bg-primary lg:h-[640px] lg:flex gap-10 justify-between items-center lg:px-[95px] px-0 h-[843px] relative sm:rounded-[15px] overflow-hidden">
+            <section className="bg-primary lg:h-[640px] lg:flex gap-10 justify-between items-center lg:px-[95px] px-0 h-[843px] relative sm:rounded-[15px] overflow-hidden">
                 <div className="h-[640px] md:right-[-150px] lg:right-0 aspect-square absolute z-1 bottom-0">
                     <img alt='background-decoration' src="/assets/home/desktop/bg-pattern-hero-home.svg" className="w-full h-full" />
                 </div>
@@ -21,7 +21,7 @@ const MainBanner = () => {
                 </div>
                 {/* <Image src='/assets/home/desktop/image-hero-phone.png' height={0} width={0} objectFit='cover' layout='fill' alt='phone' /> */}
                 {/* </div> */}
-            </main>
+            </section>
         </MaxWidthContainer>
     )
 }

@@ -5,11 +5,11 @@ import Features from './components/features'
 
 const HomePage = () => {
   return (
-    <div>
+    <main>
       <MainBanner />
       <DesignCards />
       <Features />
-    </div>
+    </main>
   )
 }
 

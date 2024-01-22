@@ -35,7 +35,7 @@ const Footer = () => {
       < footer className="pb-[64px] md:pb[80px] lg:pb[72px] pt-[64px] md:pt-[80px] lg:pt-[72px] w-full bg-black" >
         <MaxWidthContainer className="relative">
 
-          <img alt='logo' className="w-[196px] h-6 md:mb-10" src='/assets/shared/desktop/logo-light.png' />
+          <img alt='designo-logo' className="w-[196px] h-6 md:mb-10" src='/assets/shared/desktop/logo-light.png' />
 
           <hr className=' border-[#333136] my-[32px] md:my-[40px]' />
 
@@ -57,11 +57,11 @@ const Footer = () => {
 
             {/* Contacts */}
             <ul className="flex h-full justify-end items-end gap-[9px]">
-              <li><a href=''><img className='hover:brightness-125 cursor-pointer' alt='facebook-link' src='/assets/shared/desktop/icon-facebook.svg' /></a></li>
-              <li><a href=''><img className='hover:brightness-125 cursor-pointer' alt='youtube-link' src='/assets/shared/desktop/icon-youtube.svg' /></a></li>
-              <li><a href=''><img className='hover:brightness-125 cursor-pointer' alt='twitter-link' src='/assets/shared/desktop/icon-twitter.svg' /></a></li>
-              <li><a href=''><img className='hover:brightness-125 cursor-pointer' alt='pinterest-link' src='/assets/shared/desktop/icon-pinterest.svg' /></a></li>
-              <li><a href=''><img className='hover:brightness-125 cursor-pointer' alt='instagram-link' src='/assets/shared/desktop/icon-instagram.svg' /></a></li>
+              <li><a href='https://www.facebook.com/ahmed.huzain.96/'><img className='hover:brightness-125 cursor-pointer' alt='facebook-link' src='/assets/shared/desktop/icon-facebook.svg' /></a></li>
+              <li><a href='https://www.youtube.com/c/AhmedHuzain'><img className='hover:brightness-125 cursor-pointer' alt='youtube-link' src='/assets/shared/desktop/icon-youtube.svg' /></a></li>
+              <li><a href='https://twitter.com/'><img className='hover:brightness-125 cursor-pointer' alt='twitter-link' src='/assets/shared/desktop/icon-twitter.svg' /></a></li>
+              <li><a href='https://www.pinterest.com/ahmedhuzain/'><img className='hover:brightness-125 cursor-pointer' alt='pinterest-link' src='/assets/shared/desktop/icon-pinterest.svg' /></a></li>
+              <li><a href='https://www.instagram.com/el_huzain98/'><img className='hover:brightness-125 cursor-pointer' alt='instagram-link' src='/assets/shared/desktop/icon-instagram.svg' /></a></li>
             </ul>
 
           </div>

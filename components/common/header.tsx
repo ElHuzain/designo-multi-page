@@ -22,7 +22,7 @@ const Header = () => {
 
                 {/* Icon */}
                 <Link href='/home'>
-                    <Image alt='Logo' height='27' width='197' className="h-[27px]" src='/assets/shared/desktop/logo-dark.png' />
+                    <Image alt='designo-logo' height='27' width='197' className="h-[27px]" src='/assets/shared/desktop/logo-dark.png' />
                 </Link>
 
                 {/* Desktop navigation */}
