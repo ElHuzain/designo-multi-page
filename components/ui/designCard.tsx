@@ -8,7 +8,7 @@ const DesignCard = ({ Context, ImgDesktop, ImgMobile, ImgTablet, className }: an
             <img alt='card-background' src={ImgTablet} className="absolute md:block lg:hidden hidden w-full h-full top-0 left-0 z-[-1] object-cover rounded-[15px]" />
             <img alt='card-background' src={ImgDesktop} className="absolute hidden lg:block  w-full h-full top-0 left-0 object-cover z-[-1] rounded-[15px]" />
             <div className="z-30 h-full w-full flex flex-col text-center gap-6 justify-center transition-colors cursor-pointer hover:bg-[#e7826bb9] bg-[#00000063] items-center">
-                <h2 className="z-20 uppercase text-white text-[28px] md:text-[40px] tracking-[2px]">{Context}</h2>
+                <h3 className="z-20 uppercase text-white text-[28px] md:text-[40px] tracking-[2px]">{Context}</h3>
                 <div className="flex items-center gap-5">
                     <a className="text-white tracking-[5px]">VIEW PROJECTS</a>
                     <img src="assets/shared/desktop/icon-right-arrow.svg" alt="right-arrow" />
