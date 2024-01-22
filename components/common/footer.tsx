@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 const Footer = () => {
 
   return (
-    <div>
+    <footer>
 
       <div className="flex flex-col relative">
         <MaxWidthContainer>
@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
 
       {/* Actual footer */}
-      < footer className="pb-[64px] md:pb[80px] lg:pb[72px] pt-[64px] md:pt-[80px] lg:pt-[72px] w-full bg-black" >
+      <div className="pb-[64px] md:pb[80px] lg:pb[72px] pt-[64px] md:pt-[80px] lg:pt-[72px] w-full bg-black" >
         <MaxWidthContainer className="relative">
 
           <img alt='designo-logo' className="w-[196px] h-6 md:mb-10" src='/assets/shared/desktop/logo-light.png' />
@@ -67,9 +67,9 @@ const Footer = () => {
           </div>
 
         </MaxWidthContainer>
-      </footer >
+      </div >
 
-    </div >
+    </footer >
   )
 
 }
