@@ -24,6 +24,7 @@ module.exports = {
       colors: {
         peach: "var(--peach)",
         light_peach: "var(--light-peach)",
+        lighter_peach: "var(--lighter-peach)",
         black: "var(--black)",
         dark_grey: "var(--dark-grey)",
         white: "var(--white)",

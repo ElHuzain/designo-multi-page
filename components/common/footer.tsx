@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer>
 
-      <div className="flex flex-col relative">
+      <div className="flex flex-col relative mt-auto">
         <MaxWidthContainer>
 
           <div className="items-center  overflow-hidden rounded-[15px] relative justify-between flex gap-8 flex-col lg:flex-row px-6 lg:px-[95px] bg-primary py-[72px]">
