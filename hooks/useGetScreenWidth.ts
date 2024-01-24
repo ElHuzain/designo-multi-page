@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 
 const useGetScreenWidth = () => {
 
-    const calcWidth = (width: number) => width > 768 ? 'desktop' : width >= 480 ? 'tablet' : 'mobile'
+    const calcWidth = (width: number) => width > 1024 ? 'desktop' : width >= 768 ? 'tablet' : 'mobile'
 
     const [screenWidth, setScreenWidth] = useState('desktop');
 
