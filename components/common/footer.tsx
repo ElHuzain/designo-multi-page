@@ -49,18 +49,18 @@ const Footer = () => {
           <hr className=' border-[#333136] my-[32px] md:my-[40px]' />
 
           <ul className="text-white font-[300] tracking-[2px] items-center flex flex-col md:flex-row gap-8 mb-[40px] md:mb-0 md:gap-[42px] top-0 md:right-[42px] xl:right-0 md:absolute">
-            <li>OUR COMPANY</li>
-            <li>LOCATIONS</li>
-            <li>CONTACT</li>
+            <li className="hover:text-primary transition-colors cursor-pointer"><Link href="/about">OUR COMPANY</Link></li>
+            <li className="hover:text-primary transition-colors cursor-pointer"><Link href="/locations">LOCATIONS</Link></li>
+            <li className="hover:text-primary transition-colors cursor-pointer"><Link href="/contact-us">CONTACT</Link></li>
           </ul>
 
           <div className="flex flex-col md:flex-row items-center md:items-left gap-10 text-[#8E8D8E]">
 
             {/* Address & Emails */}
-            <address className="grow-[0.5]"><span className="font-bold">Designo Central Office</span><br />
+            <address className="grow-[0.5]"><span className="font-bold not-italic">Designo Central Office</span><br />
               3886 Wellington Street<br />Toronto, Ontario M9C 3J5</address>
 
-            <address className="font-bold grow">Contact Us (Central Office)
+            <address className="font-bold grow not-italic">Contact Us (Central Office)
               <br />P : +1 253-863-8967
               <br />M : contact@designo.co</address>
 
