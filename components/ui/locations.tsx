@@ -25,9 +25,9 @@ const Locations = () => {
         <MaxWidthContainer bottomMargin={true}>
             <section className="flex flex-col gap-12 md:flex-row md:gap-4 justify-between">
                 <h2 className="hidden">Locations</h2>
-                <Location title={"canada"} href={'#'} rotation={'rotate-90'} />
-                <Location title={"australia"} href={'#'} rotation={''} />
-                <Location title={"united kingdom"} href={'#'} rotation={'rotate-[-90deg]'} />
+                <Location title={"canada"} href={'/locations'} rotation={'rotate-90'} />
+                <Location title={"australia"} href={'/locations'} rotation={''} />
+                <Location title={"united kingdom"} href={'/locations'} rotation={'rotate-[-90deg]'} />
             </section>
         </MaxWidthContainer>
     )

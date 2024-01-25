@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
 import MaxWidthContainer from '@/components/ui/maxWidthContainer'
-import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const MainBanner = () => {
@@ -13,7 +13,7 @@ const MainBanner = () => {
                 <div className="space-y-6 lg:h-fit md:h-[386px] h-[392px] px-6 sm:px-0 lg:space-y-10 flex flex-col">
                     <h1 className="text-white mt-auto z-10 text-[32px] leading-[36px] text-center lg:text-left md:text-5xl">Award-winning custom<br /> designs and digital<br /> branding solutions</h1>
                     <p className="text-white z-10 max-w-[417px] lg:text-left lg:mx-0 mx-auto text-[15px] md:text-md text-center">With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
-                    <Button variant='secondary' className="self-center lg:self-start z-10">Learn more</Button>
+                    <Button asChild variant='secondary' className="self-center lg:self-start z-10"><Link href='/about'>Learn more</Link></Button>
                 </div>
                 {/* <div className="absolute bottom-100% h-full w-full"> */}
                 <div className="h-[568px] z-20 md:h-[457px]">

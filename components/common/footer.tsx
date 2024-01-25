@@ -44,7 +44,7 @@ const Footer = () => {
       <div className="pb-[64px] md:pb[80px] lg:pb[72px] pt-[64px] md:pt-[80px] lg:pt-[72px] w-full bg-black" >
         <MaxWidthContainer className="relative">
 
-          <img alt='designo-logo' className="w-[196px] h-6 md:mb-10 mx-auto md:mx-0" src='/assets/shared/desktop/logo-light.png' />
+          <Link href='/home'><img alt='designo-logo' className="w-[196px] h-6 md:mb-10 mx-auto md:mx-0" src='/assets/shared/desktop/logo-light.png' /></Link>
 
           <hr className=' border-[#333136] my-[32px] md:my-[40px]' />
 
