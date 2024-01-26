@@ -13,7 +13,7 @@ const Header = ({ data }: { data: ProejctHeader }) => {
     return (
         <MaxWidthContainer bottomMargin={true} expands={true}>
 
-            <section className="relative overflow-hidden h-[320px] w-full sm:rounded-[15px] bg-primary flex flex-col gap-6 justify-center items-center text-center text-white">
+            <section className="relative overflow-hidden h-[320px] fade-in animate-in duration-500 w-full sm:rounded-[15px] bg-primary flex flex-col gap-6 justify-center items-center text-center text-white">
 
                 {
                     screenWidth === 'mobile'
