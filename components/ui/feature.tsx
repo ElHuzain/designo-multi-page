@@ -1,5 +1,7 @@
+"use client";
 import React from 'react'
 import { twMerge } from 'tailwind-merge';
+import AnimationScroll from './animationScroll';
 
 const Feature = ({ title, description, image, backgroundDirection = 'top' }: { title: string, description: string, image: string, backgroundDirection?: string, }) => {
 
@@ -21,7 +23,7 @@ const Feature = ({ title, description, image, backgroundDirection = 'top' }: { t
 
                 {/* Icon */}
                 <img alt='Icon' className="w-full h-full z-20 object-contain" src={image} />
-                
+
             </div>
 
             <div className="space-y-[32px] sm:space-y-4 lg:space-y-[32px] text-center w-fit sm:text-left lg:text-center">
@@ -36,31 +38,35 @@ const Feature = ({ title, description, image, backgroundDirection = 'top' }: { t
 }
 
 export const PassionateFeatureCard = () => {
-    return <Feature
-        title="passionate"
-        description="Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions."
-        image="/assets/home/desktop/illustration-passionate.svg"
+    return <AnimationScroll delay='1000' direction='left'>
+        <Feature
+            title="passionate"
+            description="Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions."
+            image="/assets/home/desktop/illustration-passionate.svg"
 
-        backgroundDirection="left"
-    />
+            backgroundDirection="left"
+        />
+    </AnimationScroll>
 }
 
 export const ResourcesfulFeatureCard = () => {
-    return <Feature
+    return <AnimationScroll direction='bottom'><Feature
         title="resourceful"
         description={"Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients’ needs."}
         image="/assets/home/desktop/illustration-resourceful.svg"
 
         backgroundDirection="bottom"
     />
+    </AnimationScroll>
 }
 
 export const FriendlyFeatureCard = () => {
-    return <Feature
+    return <AnimationScroll delay='500' direction='right'><Feature
         title="friendly"
         description="We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide."
         image="/assets/home/desktop/illustration-friendly.svg"
     />
+    </AnimationScroll>
 }
 
 export default Feature

@@ -7,7 +7,7 @@ import DecorativeBackground from '@/components/ui/decorativeBackground';
 const Design = ({ data }: { data: DesignType }) => {
 
   return (
-    <main>
+    <main className="relative overflow-hidden">
       <Header data={data.header} />
       <DecorativeBackground className="translate-y-[-300px]" />
       <Projects data={data.projects} />

@@ -9,8 +9,6 @@ const RouteTo = ({ data }: { data: string[] }) => {
 
     const GetDesignCard = (card: string, index: number) => {
 
-        console.log(card);
-
         switch (card) {
             case '/web': return <WebDesignCard key={index} />;
             case '/graphic': return <GraphicDesignCard key={index} />;
@@ -23,7 +21,7 @@ const RouteTo = ({ data }: { data: string[] }) => {
         <MaxWidthContainer bottomMargin={true}>
             <section className="flex flex-col gap-6 lg:gap-[30px] lg:flex-row h-[524px] md:h-[424px] lg:h-[308px]">
                 {
-                    data.map((item: string, index: number) => <AnimationScroll direction={index % 2 === 0 ? 'left' : 'right'} className={twMerge("w-full rounded-[15px] overflow-hidden")}><>{GetDesignCard(item, index)}</></AnimationScroll>)
+                    data.map((item: string, index: number) => <AnimationScroll direction={index % 2 === 0 ? 'left' : 'right'} className={twMerge("w-full h-full rounded-[15px] overflow-hidden")}><>{GetDesignCard(item, index)}</></AnimationScroll>)
                 }
             </section>
         </MaxWidthContainer>

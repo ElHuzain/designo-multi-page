@@ -6,7 +6,7 @@ import DecorativeBackground from '@/components/ui/decorativeBackground'
 
 const HomePage = () => {
   return (
-    <main>
+    <main className="relative overflow-hidden">
       <MainBanner />
       <DecorativeBackground />
       <DesignCards />

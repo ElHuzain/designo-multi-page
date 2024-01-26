@@ -5,7 +5,7 @@ import DecorativeBackground from '@/components/ui/decorativeBackground'
 
 const ContactUs = () => {
     return (
-        <main>
+        <main className="relative overflow-hidden">
             <ContactForm />
             <Locations />
             <DecorativeBackground className="translate-y-[-445px] right-0" />
