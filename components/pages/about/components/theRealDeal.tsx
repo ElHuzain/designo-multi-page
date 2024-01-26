@@ -13,6 +13,13 @@ const TheRealDeal = () => {
       bg={"bg-lighter_peach"}
       ltr={false}
       bottomMargin={true}
+
+      bgDecoration={{
+        mobile: <img alt='background-decoration' className="absolute bottom-0 h-full object-cover left-0 z-0" src="/assets/shared/desktop/bg-pattern-three-circles.svg" />,
+        tablet: <img alt='background-decoration' className="absolute right-0 top-[-50%] z-0" src="/assets/shared/desktop/bg-pattern-three-circles.svg" />,
+        desktop: <img alt='background-decoration' className="absolute left-[-50%] bottom-[0] z-0" src="/assets/shared/desktop/bg-pattern-three-circles.svg"/>,
+      }}
+
     />
   )
 }

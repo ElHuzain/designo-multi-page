@@ -1,7 +1,9 @@
+"use client";
 import React from 'react'
 import { Button } from './button'
 import Link from 'next/link'
 import MaxWidthContainer from './maxWidthContainer'
+import AnimationScroll from './animationScroll'
 
 type LocationType = {
     title: string,
@@ -25,9 +27,19 @@ const Locations = () => {
         <MaxWidthContainer bottomMargin={true}>
             <section className="flex flex-col gap-12 md:flex-row md:gap-4 justify-between">
                 <h2 className="hidden">Locations</h2>
-                <Location title={"canada"} href={'/locations'} rotation={'rotate-90'} />
-                <Location title={"australia"} href={'/locations'} rotation={''} />
-                <Location title={"united kingdom"} href={'/locations'} rotation={'rotate-[-90deg]'} />
+                
+                <AnimationScroll delay="100ms" direction='top'>
+                    <Location title={"canada"} href={'/locations'} rotation={'rotate-90'} />
+                </AnimationScroll>
+
+                <AnimationScroll direction='bottom'>
+                    <Location title={"australia"} href={'/locations'} rotation={''} />
+                </AnimationScroll>
+
+                <AnimationScroll direction='right'>
+                    <Location title={"united kingdom"} href={'/locations'} rotation={'rotate-[-90deg]'} />
+                </AnimationScroll>
+            
             </section>
         </MaxWidthContainer>
     )
