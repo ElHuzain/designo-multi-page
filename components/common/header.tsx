@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MaxWidthContainer from '../ui/maxWidthContainer'
 
 import { HeaderDesktopNavigation, HeaderMobileNavigation } from './components/headerNavigation'
@@ -13,6 +13,12 @@ const Header = () => {
     const [expanded, setExpanded] = useState(false);
 
     const toggleMobileNavigation = () => setExpanded(!expanded);
+
+    useEffect(() => {
+        const onScrollListener = () => setExpanded(false);
+        window.addEventListener('scroll', onScrollListener);
+        return () => window.removeEventListener('scroll', onScrollListener);
+    }, [])
 
     return (
         <header>
